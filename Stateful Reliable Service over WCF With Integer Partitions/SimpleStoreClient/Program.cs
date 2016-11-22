@@ -25,19 +25,14 @@ namespace SimpleStoreClient
                      new WcfCommunicationClientFactory<IShoppingCartService>(servicePartitionResolver: serviceResolver, clientBinding: binding),
                      ServiceName, partitionKey);
 
-                shoppingClient.AddItem(new ShoppingCartItem
-                {
-                    ProductName = "XBOX ONE",
-                    UnitPrice = 329.0,
-                    Amount = 2
-                }).Wait();
-            shoppingClient.AddItem(new ShoppingCartItem
-            {
-                ProductName = "XBOX 360",
-                UnitPrice = 299,
-                Amount = 1
-            }).Wait();
+            //shoppingClient.AddItem(new ShoppingCartItem
+            //{
+            //    ProductName = "XBOX ONE",
+            //    UnitPrice = 329.0,
+            //    Amount = 1
+            //}).Wait();
             PrintPartition(shoppingClient);
+           
             var list = shoppingClient.GetItems().Result;
           
            
