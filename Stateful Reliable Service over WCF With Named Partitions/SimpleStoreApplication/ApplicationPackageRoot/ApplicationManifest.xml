@@ -2,7 +2,7 @@
 <ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="ShoppingCartServiceNamedPartitionsType" ApplicationTypeVersion="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
   <Parameters>
     <Parameter Name="ShoppingCartService_MinReplicaSetSize" DefaultValue="3" />
-    <Parameter Name="ShoppingCartService_PartitionCount" DefaultValue="3" />
+    <Parameter Name="ShoppingCartService_PartitionCount" DefaultValue="2" />
     <Parameter Name="ShoppingCartService_TargetReplicaSetSize" DefaultValue="3" />
   </Parameters>
   <!-- Import the ServiceManifest from the ServicePackage. The ServiceManifestName and ServiceManifestVersion 
@@ -23,7 +23,6 @@
         <NamedPartition>
           <Partition Name="Customer 1" />
           <Partition Name="Customer 2" />
-          <Partition Name="Customer 3" />
         </NamedPartition>
       </StatefulService>
     </Service>
