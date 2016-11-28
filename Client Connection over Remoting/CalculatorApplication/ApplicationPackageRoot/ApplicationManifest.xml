@@ -21,5 +21,25 @@
         <SingletonPartition />
       </StatelessService>
     </Service>
+    <Service Name="CalculatorServiceInstance2">
+      <StatelessService ServiceTypeName="CalculatorServiceType" InstanceCount="-1">
+        <SingletonPartition />
+      </StatelessService>
+    </Service>
+    <Service Name="CalculatorServiceInstance3">
+      <StatelessService ServiceTypeName="CalculatorServiceType" InstanceCount="-1">
+        <SingletonPartition />
+      </StatelessService>
+    </Service>
+    <Service Name="CalculatorServiceInstance4">
+      <StatelessService ServiceTypeName="CalculatorServiceType" InstanceCount="-1">
+        <SingletonPartition />
+      </StatelessService>
+    </Service>
+    <Service Name="CalculatorServiceInstance5">
+      <StatelessService ServiceTypeName="CalculatorServiceType" InstanceCount="-1">
+        <SingletonPartition />
+      </StatelessService>
+    </Service>
   </DefaultServices>
 </ApplicationManifest>

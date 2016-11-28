@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Fabric;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
@@ -15,6 +14,7 @@ namespace CalculatorService
     /// </summary>
     internal sealed class CalculatorService : StatelessService, ICalculatorService
     {
+    
         public CalculatorService(StatelessServiceContext context)
             : base(context)
         { }
@@ -57,5 +57,7 @@ namespace CalculatorService
                 await Task.Delay(TimeSpan.FromSeconds(1), cancellationToken);
             }
         }
+
+       
     }
 }
